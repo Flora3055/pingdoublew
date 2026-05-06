@@ -1,0 +1,116 @@
+/*==========================
+=> bestsale product css
+============================*/
+.bestsale-product {
+    overflow: hidden;
+    .popular-product-item {
+        border: 1px solid $border-color-1;
+        position: relative;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        margin-left: 0;
+        transition: $transition;
+        margin-bottom: 20px;
+        @include breakpoint(medium){
+            padding-left: 60px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-right: 10px;
+            margin-left: 50px;
+            margin-bottom: 30px;
+        }
+        .popular-product-thum {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: 0;
+            transform: translate(-50%, 0);
+            left: 50%;
+            z-index: 2;
+            border-radius: 50%;
+            margin: 0 0 15px;
+            @include breakpoint(medium){
+                position: absolute;
+                top: 50%;
+                transform: translate(0, -50%);
+                left: -46px;
+                margin: 0;
+            }
+        }
+        .popular-product-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .product-content-title {
+                padding-right: 10px;
+                @include breakpoint(medium){
+                    padding-right: 20px;
+                }
+                h3 {
+                    font-size: 18px;
+                    letter-spacing: .2px;
+                    margin: 0 0 5px;
+                    @include breakpoint(medium){
+                        font-size: 22px;
+                        letter-spacing: .6px;
+                        margin: 0 0 10px;
+                    }
+                    a {
+                        color: $heading-color-1;
+                        transition: $transition;
+                    }
+                    a:hover {
+                        color: $main-hover;
+                    }
+                }
+                p {
+                    color: $body-text-color;
+                    margin: 0;
+                    font-size: 13px;
+                    @include breakpoint(medium){
+                        font-size: 15px;
+                    }
+                }
+            }
+            .product-price {
+                position: relative;
+                text-align: center;
+                span {
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: $main-hover;
+                    @include breakpoint(medium){
+                        font-size: 24px;
+                    }
+                }
+                del {
+                    font-size: 15px;
+                    color: $body-text-color;
+                    margin: 1px 0 0;
+                    display: block;
+                    @include breakpoint(medium){
+                        font-size: 17px;
+                        margin: 5px 0 0;
+                    }
+                }
+            }
+            .product-price::before {
+                position: absolute;
+                left: -7px;
+                height: 50px;
+                width: 1px;
+                background: $border-color-1;
+                content: "";
+                top: 50%;
+                transform: translatey(-50%);
+                @include breakpoint(medium){
+                    left: -20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+/*==========================
+=> register area css
+============================*/
+.register-area {
+    .register-content {
+        .register-title {
+            margin: 0 0 40px;
+            h2 {
+                font-size: 30px;
+                font-weight: 700;
+                margin: 0 0 10px;
+            }
+            p {
+                margin: 0 0 0;
+                font-size: 15px;
+            }
+        }
+        input {
+            font-size: 15px;
+            color: $heading-color-1;
+            height: 50px;
+            padding: 5px 15px;
+            width: 100%;
+            background: $section-bg-color-2;
+            border: 1px solid $border-color-1;
+            margin: 0 0 20px;
+            border-radius: 0;
+            @include breakpoint(medium){
+                font-size: 16px;
+            }
+        }
+        span.password-text {
+            margin: 0 0 20px;
+            display: block;
+            font-size: 14px;
+        }
+        span {
+            margin: 0 0 30px;
+            display: block;
+            input {
+                width: auto !important;
+                height: auto !important;
+                margin: 0 10px 0 0 !important;
+            }
+        }
+        button {
+            color: $body-text-color;
+            font-size: 16px;
+            padding: 12px 60px;
+            border-radius: 0;
+            background: $section-bg-color-2;
+            border: 1px solid $border-color-1;
+            transition: $transition;
+            margin: 0 0 10px;
+        }
+        button:hover {
+            color: $text-color-1;
+            background: $main-hover;
+            border: 1px solid $main-hover;
+        }
+    }
+}

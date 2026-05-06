@@ -1,0 +1,409 @@
+/*==========================
+=> header css
+============================*/
+    
+    // header top css 
+    .header-bottom.header-bottom-2 {
+        padding: 30px 0 15px;
+        background: $bg-color-1;
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            .col {
+                flex-basis: content;
+                .logo-area {
+                    margin-bottom: 15px;
+                }
+                .main-menu.menu-2 {
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    position: static;
+                    nav{
+                        ul{
+                            li{
+                                display: inline-block;
+                                position: relative;
+                                a {
+                                    font-size: 15px;
+                                    padding: 22px 10px;
+                                    color: $body-text-color;
+                                    font-weight: 500;
+                                    font-family: $heading-font;
+                                    transition: $transition;
+                                    i {
+                                        margin-left: 6px;
+                                    }
+                                }
+                                .sub-menu {
+                                    position: absolute;
+                                    left: 0;
+                                    top: 130%;
+                                    min-width: 230px;
+                                    border-top: 2px solid $main-hover;
+                                    background: $bg-color-1;
+                                    box-shadow: $box-shadow-1;
+                                    padding: 20px;
+                                    opacity: 0;
+                                    visibility: hidden;
+                                    z-index: 5;
+                                    transition: $transition;
+                                    li {
+                                        display: block;
+                                        a {
+                                            display: block;
+                                            padding: 8px 0;
+                                            color: $body-text-color;
+                                            transition: $transition;
+                                        }
+                                        a:hover {
+                                            color: $main-hover
+                                        }
+                                    }
+                                }
+                                .mega-menu {
+                                    position: absolute;
+                                    left: 0;
+                                    top: 130%;
+                                    width: 100%;
+                                    padding: 20px;
+                                    border-top: 2px solid $main-hover;
+                                    background: $bg-color-1;
+                                    box-shadow: $box-shadow-1;  
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    opacity: 0;
+                                    visibility: hidden;
+                                    z-index: 5;
+                                    transition: $transition;
+                                    li {
+                                        display: block;
+                                        flex: 0 0 25%;
+                                        padding: 0 10px;
+                                        a {
+                                            padding: 10px 15px;
+                                            border-bottom: 2px dotted $main-hover;
+                                            background: $section-bg-color;
+                                            display: block;
+                                            width: 100%;
+                                            color: $heading-color-1;
+                                        }
+                                        ul {
+                                            padding-top: 20px;
+                                            li {
+                                                padding: 0;
+                                                a {
+                                                    padding: 10px 15px;
+                                                    border-bottom: none;
+                                                    background: transparent;
+                                                    display: block;
+                                                    width: 100%;
+                                                    color: #010101;
+                                                    transition: $transition;
+                                                }
+                                                a:hover {
+                                                    color: $main-hover
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            li.mega-menu-parent {
+                                position: static;
+                            }
+                            li.active{
+                                a {
+                                    color: $main-hover;
+                                }
+                            }
+                            li:hover{
+                                a {
+                                    color: $main-hover;
+                                }
+                                .sub-menu {
+                                    top: 100%;
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+                                .mega-menu {
+                                    top: 100%;
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+                            }
+                        }
+                    }
+                }
+                .header-shopping-area {
+                    ul {
+                        display: flex;
+                        justify-content: flex-end;
+                        li {
+                            position: relative;
+                            margin-right: 20px; 
+                            a {
+                                font-size: 24px;
+                                color: $heading-color-1;
+                                transition: .3s;
+                            }
+                            a:hover {
+                                color: $main-hover;
+                            }
+                            a.cart-area {
+                                display: flex;
+                                justify-content: space-between;
+                                .cart-icon {
+                                    position: relative;
+                                    sup {
+                                        background: $main-hover;
+                                        color: $text-color-1;
+                                        width: 20px;
+                                        height: 20px;
+                                        display: inline-block;
+                                        font-size: 12px;
+                                        text-align: center;
+                                        position: absolute;
+                                        top: 0;
+                                        left: auto;
+                                        right: -16px;
+                                        border-radius: 50px;
+                                        line-height: 18px;
+                                    }
+                                }
+                                .cart-item {
+                                    margin-left: 24px;
+                                    span {
+                                        display: block;
+                                        font-size: 14px;
+                                    }
+                                    span.item-price {
+                                        font-size: 13px;
+                                        color: $main-hover;
+                                    }
+                                }
+                            }
+                            .mini-cart {
+                                position: absolute;
+                                border-top: 2px solid $main-hover;
+                                background: $bg-color-1;
+                                box-shadow: $box-shadow-1;
+                                right: 0;
+                                left: auto;
+                                min-width: 320px;
+                                top: 70px;
+                                padding: 15px;
+                                opacity: 0;
+                                visibility: hidden;
+                                transition: $transition;
+                                z-index: 1;
+                                .cart-area {
+                                    .cart-product {
+                                        .cart-item {   
+                                            overflow-y: auto;
+                                            max-height: 250px;
+                                            .single-cart-item {
+                                                display: flex;
+                                                justify-content: space-between;
+                                                align-items: center;
+                                                margin-bottom: 20px;
+                                                .item-img {
+                                                    flex: 0 0 80px;
+                                                    margin-right: 10px;
+                                                }
+                                                .item-title {
+                                                    flex: 0 0 165px;
+                                                    h4 {
+                                                        margin-bottom: 4px;
+                                                        a {
+                                                            font-size: 16px;
+                                                            color: $heading-color-1
+                                                        }
+                                                        a:hover {
+                                                            color: $main-hover
+                                                        }
+                                                    }
+                                                    .qty-title {
+                                                        margin-right: 5px;
+                                                        color: $body-text-color;
+                                                    }
+                                                    .item-price {
+                                                        font-size: 16px;
+                                                        color: $main-hover;
+                                                    }
+                                                }
+                                                .item-remove-icon {
+                                                    a {
+                                                        color: $heading-color-1;
+                                                        font-size: 24px;
+                                                    }
+                                                    a:hover {
+                                                        color: $main-hover
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .cart-total-price {
+                                        margin-bottom: 20px;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        .total-text {
+                                            font-size: 20px;
+                                            color: $heading-color-1;
+                                        }
+                                        .total-price {
+                                            font-size: 25px;
+                                            color: $main-hover;
+                                        }
+                                    }
+                                    .cart-button {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        a {
+                                            position: relative;
+                                            z-index: 1;
+                                            font-size: 15px;
+                                            color: $heading-color-1;
+                                            background: $bg-color-1;
+                                            border: 2px solid $heading-color-1;
+                                            padding: 12px 25px;
+                                            transition: $transition;
+                                        }
+                                        a:hover {
+                                            color: $text-color-1;
+                                            background: $main-hover;
+                                            border: 2px solid $main-hover;
+                                        }
+                                        a::after {   
+                                            width: 0%;
+                                            height: 100%;
+                                            top: 0;
+                                            left: 0;
+                                            background: $main-hover;
+                                            content: '';
+                                            position: absolute;
+                                            z-index: -1;
+                                            transition: $transition;
+                                        }
+                                        a:hover::after {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        li:hover {
+                            .mini-cart{
+                                opacity: 1;
+                                visibility: visible;
+                                top: 50px
+                            }
+                        }
+                        li:last-child {
+                            margin-right: 0;
+                        }
+                        li.user-area {
+                            ul {
+                                position: absolute;
+                                left: auto;
+                                right: 0;
+                                border-top: 2px solid $main-hover;
+                                box-shadow: $box-shadow-1;
+                                min-width: 150px;
+                                top: 70px;
+                                background: $bg-color-1;
+                                text-align: right;
+                                padding: 15px;
+                                transition: $transition;
+                                opacity: 0;
+                                visibility: hidden;
+                                z-index: 5;
+                                display: block;
+                                li {
+                                    display: block;
+                                    margin: 0;
+                                    padding: 2px 0;
+                                    a {
+                                        font-size: 14px;
+                                        display: block;
+                                        line-height: 25px;
+                                        color: $body-text-color;
+                                        transition: $transition;
+                                    }
+                                    a:hover {
+                                        color: $main-hover;
+                                    }
+                                }
+                            }
+                        }
+                        li.user-area:hover {
+                            ul {
+                                top: 50px;
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                        li.search {
+                            .header-search {
+                                position: absolute;
+                                left: auto;
+                                right: 0;
+                                border-top: 2px solid $main-hover;
+                                box-shadow: $box-shadow-1;
+                                min-width: 100px;
+                                top: 70px;
+                                background: $bg-color-1;
+                                padding: 15px;
+                                transition: $transition;
+                                z-index: 5;
+                                width: 300px;
+                                max-width: 300px;
+                                opacity: 0;
+                                visibility: hidden;
+                                .search-area {
+                                    position: relative;
+                                    input {
+                                        border: 1px solid $main-hover;
+                                        height: 50px;
+                                        color: $heading-color-1;
+                                        font-size: 15px;
+                                        background: $bg-color-1;
+                                        padding: 0 50px 0 15px;
+                                        width: 100%;
+                                    }
+                                    button {
+                                        position: absolute;
+                                        right: 0;
+                                        left: auto;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        background: $main-hover;
+                                        border: none;
+                                        color: $text-color-1;
+                                        padding: 0 12px;
+                                        height: 50px;
+                                        line-height: 50px;
+                                        font-size: 20px;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+                        li.search:hover {
+                            .header-search {
+                                top: 50px;
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

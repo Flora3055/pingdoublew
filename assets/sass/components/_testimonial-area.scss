@@ -1,0 +1,140 @@
+/*==========================
+=> testimonial area css
+============================*/ 
+
+    .testimonial-area {
+        overflow: hidden;
+        .testimonial-itam {
+            margin-bottom: 30px;
+            .testimonial-image-slide {
+                width: 220px;
+                margin: 0 auto;
+                .slick-list {
+                    padding: 25px 1px 15px 84px;
+                    margin: 0 -2px 0 -30px;
+                    border-radius: 50px;
+                    .slick-slide {
+                        overflow: hidden;
+                        position: relative;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        transform: scale(1.4);
+                        transition: $transition-2;
+                    }
+                    .testimonial-image {
+                        margin-bottom: 25px;
+                        img {
+                            max-width: 85px;
+                            border-radius: 50%;
+                            width: 100%;
+                        }
+                    }
+                    .slick-active {
+                        z-index: 9;
+                    }
+                    .slick-current {
+                        transform: scale(1.8);
+                        z-index: 99;
+                        transition: $transition-1;
+                    }
+                }
+            }
+            .testimonial-text-slide {
+                padding: 0 0 80px 0px;
+                .testimonial-info {
+                    margin-top: 30px;
+                    p {
+                        font-size: 14px;
+                        color: $body-text-color;
+                        margin-bottom: 30px;
+                        @include breakpoint(medium){
+                            font-size: 18px;
+                        }
+                    }
+                    h5 {
+                        font-size: 17px;
+                        font-weight: 600;
+                        margin-bottom: 5px;
+                        @include breakpoint(medium){
+                            font-size: 20px;
+                        }
+                    }
+                    h6 {
+                        font-size: 15px;
+                        font-weight: 500;
+                        margin: 0;
+                        @include breakpoint(medium){
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .slick-arrow {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 20px;
+                    font-size: 20px;
+                    color: $body-text-color;
+                    border: 1px solid $body-text-color;
+                    background: transparent;
+                    border-radius: 50%;
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
+                    text-align: center;
+                    z-index: 3;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: $transition;
+                }
+                .slick-next.slick-arrow {
+                    left: auto;
+                    right: 20px;
+                }
+                .slick-arrow:hover {
+                    color: $text-color-1;
+                    border: 1px solid $main-hover;
+                    background: $main-hover;
+                }
+                .slick-dots {
+                    position: absolute;
+                    bottom: 0;
+                    transform: translateX(-50%);
+                    left: 50%;
+                    li {
+                        display: inline-block;
+                        margin: 0 3px;
+                        background: transparent;
+                        border: 2px solid $body-text-color;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        transition: $transition;
+                        button {
+                            display: none;
+                        }
+                    } 
+                    li:hover {
+                        background: $main-hover;
+                        border: 2px solid $main-hover;
+                    }
+                    li.slick-active {
+                        background: $main-hover;
+                        border: 2px solid $main-hover;
+                    }
+                }
+            }  
+            .testimonial-text-slide:hover {
+                .slick-arrow {
+                    left: 0;
+                    opacity: 1;
+                    visibility: visible;
+                }
+                .slick-next.slick-arrow {
+                    left: auto;
+                    right: 0;
+                }
+            }
+        }
+    }

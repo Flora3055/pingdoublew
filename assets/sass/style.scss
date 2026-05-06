@@ -1,0 +1,133 @@
+/*-----------------------------------------------------------------------------------
+    Template Name: Florid - Flower & Florist Shop HTML Template
+	Description: Made by ThemeLife
+    Version: 1.0.0
+-----------------------------------------------------------------------------------
+    >>>>> Table of Contents:
+    ===================
+    => Variable css
+    => Mixins css
+    => typhography
+    => Default css
+    => header css
+    => footer css
+    => slider css
+    => service area css
+    => banner area css
+    => section title css
+    => product grid css
+    => product list css
+    => slider arrow dot css
+    => product area css
+    => testimonial area css
+    => latest blog css
+    => tab product css
+    => newsletter area css
+    => slider 2 css
+    => banner area 2 css
+    => single product css
+    => bestsale product css
+    => quick view modal css
+    => cart modal css
+    => wishlist modal css
+    => compare modal css
+    => mobile header area css
+    => mobile offcanvas area css
+    => breadcrumb css
+    => pagination css
+    => shop sidebar css
+    => blog grid css
+    => blog sidebar css
+    => shopping cart css
+    => shop page css
+    => blog page css
+    => blog details page css
+    => product details css
+    => product tab css
+    => contact page css
+    => google map css
+    => about area css
+    => faq area css
+    => wishlist area css
+    => cart area css
+    => checkout area css
+    => login area css
+    => register area css
+    => error found area css
+    => coming soon area css
+    => account page css
+
+
+-----------------------------------------------------------------------------------*/
+// Base CSS
+@import "base/variable";
+@import "base/mixing";
+@import "base/typhography";
+@import "base/common";
+
+// Layout CSS
+@import "layout/header/header-1";
+@import "layout/header/header-2";
+@import "layout/header/header-3";
+@import "layout/footer";
+
+// Components CSS
+@import "components/slider";
+@import "components/service";
+@import "components/banner";
+@import "components/section-title";
+@import "components/product-grid";
+@import "components/product-list-item";
+@import "components/slick-slider-arrow-dot";
+@import "components/product-area";
+@import "components/testimonial-area";
+@import "components/latest-blog";
+@import "components/tab-product";
+@import "components/newsletter-area";
+@import "components/slider-2";
+@import "components/banner-2";
+@import "components/single-product-area";
+@import "components/bestsale-product";
+@import "components/quick-view-modal-area";
+@import "components/add-to-cart-modal-area";
+@import "components/add-wishlist-modal-area";
+@import "components/compare-modal-area";
+@import "components/mobile-header-area";
+@import "components/mobile-offcanvas-area";
+@import "components/breadcrumb-area";
+@import "components/pagination-area";
+@import "components/shop-sidebar-area";
+@import "components/blog-grid-item";
+@import "components/blog-sidebar-area";
+@import "components/shoping-cart";
+
+
+// Pages CSS
+@import "pages/shop-area";
+@import "pages/blog-area";
+@import "pages/blog-details-area";
+@import "pages/product-details-area";
+@import "pages/product-tab-area";
+@import "pages/contact-area";
+@import "pages/google-map";
+@import "pages/about-area";
+@import "pages/faq-area";
+@import "pages/wishlist-area";
+@import "pages/cart-area";
+@import "pages/checkout-area";
+@import "pages/login-area";
+@import "pages/register-area";
+@import "pages/error-found-area";
+@import "pages/coming-soon-area";
+@import "pages/account-area";
+
+
+
+
+
+
+
+
+
+      
+

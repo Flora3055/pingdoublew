@@ -1,0 +1,26 @@
+/*==========================
+=> wishlist modal css
+============================*/
+.add-wishlist-modal-area {
+    .modal-dialog {
+        .modal-content {
+            .modal-body {
+                .cart-modal-content {
+                    .cart-product-info {
+                        .action-button {
+                            padding: 0 8px;
+                            font-size: 14px;
+                            @include breakpoint(medium){
+                                font-size: 15px;
+                            }
+                            font-size: 14px;
+                        }
+                        .action-button + .action-button {
+                            margin: 0 0 0 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

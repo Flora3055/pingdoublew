@@ -1,0 +1,125 @@
+/*==========================
+=> account page css
+============================*/
+.account-area {
+    .account-tab-menu{
+        margin: 0 0 30px;
+        ul {
+            display: block;
+            li {
+                display: block;
+                background: $section-bg-color-2;
+                border: 1px solid $border-color-2;
+                color: $body-text-color;
+                padding: 20px 25px;
+                transition: $transition;
+                a {
+                    font-size: 16px;
+                    color: $heading-color-1;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    transition: $transition;
+                    i {
+                        font-size: 22px;
+                    }
+                }
+            }
+            li:hover {
+                background: $main-hover;
+                border: 1px solid $main-hover;
+                a {
+                    color: $text-color-1;
+                }
+            }
+        }
+    }
+    .tab-content {
+        margin: 0 0 30px;
+        .account-tab-content {
+            p {
+                font-size: 16px;
+                margin: 0 0 20px;
+                a {
+                    color: $heading-color-1;
+                    transition: $transition;
+                }
+                a:hover {
+                    color: $main-hover;
+                }
+            }
+            .table-responsive {
+                tbody {
+                    td {
+                        a {
+                            color: $heading-color-1;
+                            transition: $transition;
+                        }
+                        a:hover {
+                            color:$main-hover;
+                        }
+                    }
+                }
+            }
+            h4 {
+                font-size: 18px;
+                font-weight: 500;
+                margin: 0 0 20px;
+                a {
+                    color: $heading-color-1;
+                    transition: $transition;
+                    margin: 0 0 0 5px;
+                }
+                a:hover {
+                    color:$main-hover;
+                }
+            }
+            .account-form {
+                label {
+                    font-size: 15px;
+                    font-weight: 500;
+                    margin: 0 0 10px;
+                }
+                h3 {
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin: 0 0 10px;
+                }
+                input {
+                    font-size: 15px;
+                    color: $heading-color-1;
+                    height: 50px;
+                    padding: 5px 10px;
+                    width: 100%;
+                    background: $section-bg-color-2;
+                    border: 1px solid $border-color-1;
+                    margin: 0 0 20px;
+                    border-radius: 0;
+                    @include breakpoint(medium){
+                        font-size: 16px;
+                        margin: 0 0 30px;
+                        padding: 5px 15px;
+                    }
+                }
+                button {
+                    color: $body-text-color;
+                    font-size: 15px;
+                    padding: 10px 25px;
+                    border-radius: 0;
+                    background: $section-bg-color-2;
+                    border: 1px solid $border-color-1;
+                    transition: $transition;
+                    @include breakpoint(medium){
+                        font-size: 16px;
+                        padding: 14px 35px;
+                    }
+                }
+                button:hover {
+                    color: $text-color-1;
+                    background: $main-hover;
+                    border: 1px solid $main-hover;
+                }
+            }
+        }
+    }
+}

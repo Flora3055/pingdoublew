@@ -1,0 +1,53 @@
+/*==========================
+=> tab product css
+============================*/ 
+.tab-product {
+    overflow: hidden;
+    .tab-menu {
+        margin-bottom: 40px;
+        ul.nav {
+            justify-content: center;
+            align-items: center;
+            li {
+                display: inline-block;
+                margin: 0 15px;
+                a {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: $heading-color-1;
+                    transition: $transition;
+                }
+                a:hover {
+                    color: $main-hover;
+                }
+                a.active {
+                    color: $main-hover;
+                }
+            }
+        }
+    }
+    .tab-content {
+        .tab-pane {
+            display: block;
+            height: 0;
+            max-width: 100%;
+            visibility: hidden;
+            overflow: hidden;
+            opacity: 0;
+            .product-slider {
+                .slick-dots {
+                    bottom: -15px;
+                    @include breakpoint(large){
+                        bottom: 15px;
+                    }
+                }
+            }  
+        }
+        .tab-pane.active {
+            height: auto;
+            visibility: visible;
+            opacity: 1;
+            overflow: visible;
+        }
+    } 
+}

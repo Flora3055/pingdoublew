@@ -1,0 +1,196 @@
+/*==========================
+=> product tab css
+============================*/
+.product-tab-area {
+    .description-menu {
+        margin: 0 0 20px;
+        @include breakpoint(medium){
+            margin: 0 0 40px;
+        }
+        ul {
+            li {
+                display: inline-block;
+                margin: 0 5px 10px;
+                @include breakpoint(medium){
+                    margin: 0 10px;
+                }
+                a {
+                    font-size: 16px;
+                    @include breakpoint(medium){
+                        font-size: 18px;
+                    }
+                    color: $heading-color-1;
+                    background: $section-bg-color-2;
+                    padding: 10px 20px;
+                    font-weight: 600;
+                    transition: $transition;
+                }
+                a:hover,a.active {
+                    color: $text-color-1;
+                    background: $main-hover;
+                }
+            }
+        }
+    }
+    .product-description {
+        p {
+            color: $body-text-color;
+            font-size: 15px;
+            margin: 0 0 0;
+            @include breakpoint(medium){
+                font-size: 16px;
+            }
+        }
+    }
+    .product-reviews {
+        .reviews-comment-item {
+            margin: 0 0 10px;
+            overflow: hidden;
+            .reviews-comment {
+                display: flex;
+                align-items: center;
+                margin: 0 0 20px;
+                flex-wrap: wrap;
+                @include breakpoint(medium){
+                    flex-wrap: unset;
+                    margin: 0 0 30px;
+                    justify-content: space-between;
+                }
+                .author-image {
+                    margin: 0 0 20px 0;
+                    @include breakpoint(medium){
+                        margin: 0 30px 0 0;
+                    }
+                    img {
+                        border-radius: 50%;
+                        width: 100px;
+                        height: 100px;
+                        @include breakpoint(medium){
+                            margin: 0 30px 0 0;
+                            width: auto;
+                            height: auto;
+                        }
+                    }
+                }
+                .author-infor {
+                    .author-content {
+                        padding: 0 10px 0 0;
+                        @include breakpoint(medium){
+                            padding: 0 40px 0 0;
+                        }
+                        h4 {
+                            font-size: 16px;
+                            color: $body-text-color;
+                            margin: 0 0 5px;
+                            font-weight: 500;
+                            @include breakpoint(medium){
+                                font-size: 18px;
+                                margin: 0 0 10px;
+                            }
+                        }
+                        span {
+                            display: block;
+                            margin: 0 0 8px;
+                        }
+                        .product-rating {
+                            margin-bottom: 5px;
+                            i {
+                                margin: 0 2px;
+                                color: $rating-color;
+                                font-size: 15px;
+                            }
+                        }
+                        p {
+                            margin: 0;
+                            font-size: 15px;
+                            @include breakpoint(medium){
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .reviews-form {
+            .reviews-form {
+                textarea {
+                    font-size: 15px;
+                    color: $heading-color-1;
+                    width: 100%;
+                    min-height: 100px;
+                    padding: 10px 15px;
+                    background: $section-bg-color-2;
+                    border: 1px solid $border-color-1;
+                    margin: 0 0 20px;
+                    border-radius: 0;
+                    @include breakpoint(medium){
+                        font-size: 16px;
+                        margin: 0 0 30px;
+                        min-height: 160px;
+                    }
+                }
+                input {
+                    font-size: 15px;
+                    color: $heading-color-1;
+                    height: 50px;
+                    padding: 5px 10px;
+                    width: 100%;
+                    background: $section-bg-color-2;
+                    border: 1px solid $border-color-1;
+                    margin: 0 0 20px;
+                    border-radius: 0;
+                    @include breakpoint(medium){
+                        font-size: 16px;
+                        margin: 0 0 40px;
+                        padding: 5px 15px;
+                    }
+                }
+                button {
+                    color: $body-text-color;
+                    font-size: 15px;
+                    padding: 10px 25px;
+                    border-radius: 0;
+                    background: $section-bg-color-2;
+                    border: 1px solid $border-color-1;
+                    transition: $transition;
+                    @include breakpoint(medium){
+                        font-size: 16px;
+                        padding: 14px 35px;
+                    }
+                }
+                button:hover {
+                    color: $text-color-1;
+                    background: $main-hover;
+                    border: 1px solid $main-hover;
+                }
+            }
+        }
+    }
+    .product-policy {
+        h3 {
+            font-size: 20px;
+            color: $heading-color-1;
+            font-weight: 500;
+            margin: 0 0 10px;
+        }
+        ul {
+            margin: 0 0 20px;
+            li {
+                font-size: 14px;
+                line-height: 30px;
+                list-style: inside;
+                @include breakpoint(medium){
+                    font-size: 16px;
+                }
+            }
+        } 
+        p {
+            color: $body-text-color;
+            font-size: 14px;
+            margin: 0 0 20px;
+            @include breakpoint(medium){
+                font-size: 16px;
+            }
+        }
+    }
+}

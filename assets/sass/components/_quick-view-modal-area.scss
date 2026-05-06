@@ -1,0 +1,225 @@
+/*==========================
+=> quick view modal css
+============================*/
+
+.quick-view-modal-area {
+    position: relative;
+    .modal-dialog {
+        max-width: 320px;
+        @include breakpoint(medium){
+            max-width: 750px;
+        }
+        @include breakpoint(large){
+            max-width: 980px;
+        }
+        .modal-content {
+            border: none;
+            border-radius: 0;
+            outline: 0;
+            .modal-header {
+                padding: 0;
+                border-bottom: none;
+                .close {
+                    position: absolute;
+                    right: 8px;
+                    left: auto;
+                    top: 8px;
+                    font-size: 26px;
+                    opacity: 1;
+                    z-index: 1;
+                    transition: $transition;
+                    background-color: transparent;
+                    color: $heading-color-1;
+                    border: none;
+                }
+                .close:hover {
+                    color: $main-hover;
+                }
+            }
+            .modal-body {
+                padding: 15px;
+                @include breakpoint(medium){
+                    padding: 30px;
+                }
+                .row {
+                    align-items: center;
+                    .quick-product-info {
+                        h3 {
+                            font-size: 25px;
+                            margin: 0 0 10px;
+                            font-weight: 700;
+                            @include breakpoint(medium){
+                                font-size: 30px;
+                            }
+                        }
+                        .quick-price {
+                            margin: 0 0 10px;
+                            span {
+                                font-size: 26px;
+                                color: $main-hover;
+                            }
+                            del {
+                                font-size: 18px;
+                                color: $heading-color-1;
+                                margin: 0 0 0 10px;
+                            }
+                        }
+                        .quick-ratting {
+                            margin: 0 0 10px;
+                            i {
+                                margin: 0 2px 0 0;
+                                color: $rating-color;
+                                font-size: 15px;
+                            }
+                        }
+                        .quick-product-description {
+                            margin: 0 0 20px;
+                            p {
+                                margin: 0;
+                                font-size: 15px;
+                            }
+                        }
+                        .quick-varient {
+                            .product-varient {
+                                margin: 0 0 20px;
+                                h4 {
+                                    font-size: 18px;
+                                    font-weight: 600;
+                                    margin: 0 0 10px;
+                                }
+                                ul {
+                                    li {
+                                        display: inline-block;
+                                        margin: 0 10px 0 0;
+                                        a {
+                                            font-size: 16px;
+                                            color: $body-text-color;
+                                            transition: $transition;
+                                        }
+                                        a:hover {
+                                            color: $main-hover;
+                                        }
+                                    }
+                                }
+                            }
+                            .product-varient.color {
+                                ul {
+                                    li {
+                                        background-color: $black-color;
+                                        border: 1px solid transparent;
+                                        height: 20px;
+                                        width: 20px;
+                                        border-radius: 50%;
+                                        cursor: pointer;
+                                    }
+                                    li.blue {
+                                        background-color: $blue-color;
+                                    }
+                                    li.green {
+                                        background-color: $green-color;
+                                    }
+                                    li.pink {
+                                        background-color: $pink-color;
+                                    }
+                                    li.white {
+                                        background-color: $white-color;
+                                        border: 1px solid $border-color-1;
+                                    }
+                                    li.red {
+                                        background-color: $red-color;
+                                    }
+                                    li.yellow {
+                                        background-color: $yellow-color;
+                                    }
+                                }
+                            }
+                        }
+                        .quick-product-cart {
+                            margin: 0 0 15px;
+                            display: flex;
+                            align-items: center;
+                            .cart-plus-minus {
+                                border: 1px solid $border-color-1;
+                                overflow: hidden;
+                                padding: 8px 5px 7px 5px;
+                                width: 80px;
+                                height: 46px;
+                                margin: 0 15px 0 0;
+                                .qtybutton {
+                                    color: $body-text-color;
+                                    cursor: pointer;
+                                    float: left;
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    height: 20px;
+                                    line-height: 20px;
+                                    position: relative;
+                                    text-align: center;
+                                    width: 20px;
+                                }
+                                input.cart-plus-minus-box {
+                                    background: transparent none repeat scroll 0 0;
+                                    border: medium none;
+                                    float: left;
+                                    font-size: 16px;
+                                    height: 28px;
+                                    margin: 0;
+                                    padding: 0;
+                                    text-align: center;
+                                    width: 25px;
+                                }
+                                .qtybutton.dec, .qtybutton.inc {
+                                    margin-top: 5px;
+                                }
+                            }
+                            .action-button {
+                                background: $action-bg-color;
+                                color: $heading-color-1;
+                                padding: 0 10px;
+                                height: 45px;
+                                font-size: 14px;
+                                line-height: 44px;
+                                font-weight: 500;
+                                transition: $transition;
+                                margin: 0 8px 0 0;
+                                @include breakpoint(medium){
+                                    padding: 0 20px;
+                                    font-size: 15px;
+                                    margin: 0 15px 0 0;
+                                }
+                            }
+                            .action-button:hover {
+                                color: $text-color-1;
+                                background: $main-hover;
+                            }
+                            .wishlist.action-button {
+                                margin: 0;
+                                font-size: 18px;
+                                width: 55px;
+                                height: 45px;
+                                padding: 0;
+                                text-align: center;
+                            }
+                        }
+                        .social-media {
+                            span {
+                                font-size: 16px;
+                                color: $heading-color-1;
+                                font-weight: 600;
+                            }
+                            a {
+                                font-size: 16px;
+                                margin: 0 0 0 10px;
+                                color: $body-text-color;
+                                transition: $transition;
+                            }
+                            a:hover {
+                                color: $main-hover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,256 @@
+/*==========================
+=> checkout area css
+============================*/
+.checkout-area {
+    .checkout-information {
+        margin: 0 0 30px;
+        .contact-information {
+            margin: 0 0 30px;
+            @include breakpoint(medium){
+                margin: 0 0 50px;
+            }
+            .contact-heading {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 0 20px;
+                flex-wrap: wrap;
+                h2 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin: 0 0 10px;
+                    @include breakpoint(medium){
+                        margin: 0 0 0;
+                        font-size: 22px;
+                    }
+                }
+                span {
+                    font-size: 14px;
+                    a {
+                        color: $body-text-color;
+                        margin: 0 0 0 5px;
+                        transition: $transition;
+                    }
+                    a:hover {
+                        color: $main-hover;
+                    }
+                }
+            }
+            input {
+                font-size: 15px;
+                color: $heading-color-1;
+                height: 50px;
+                padding: 5px 10px;
+                width: 100%;
+                background: $section-bg-color-2;
+                border: 1px solid $border-color-1;
+                margin: 0 0 10px;
+                border-radius: 0;
+                @include breakpoint(medium){
+                    font-size: 16px;
+                    margin: 0 0 15px;
+                    padding: 5px 15px;
+                }
+            }
+            span {
+                font-size: 13px;
+                input {
+                    width: 15px;
+                    height: 15px;
+                    padding: 0;
+                    margin: 0 5px 0 0;
+                    background: transparent;
+                    border: 1px solid $border-color-1;
+                    border-radius: 2px;
+                }
+            }
+        }
+        .conact-address {
+            h2 {
+                font-size: 20px;
+                font-weight: 700;
+                margin: 0 0 20px;
+                @include breakpoint(medium){
+                    font-size: 22px;
+                }
+            } 
+            input {
+                font-size: 15px;
+                color: $heading-color-1;
+                height: 50px;
+                padding: 5px 10px;
+                width: 100%;
+                background: $section-bg-color-2;
+                border: 1px solid $border-color-1;
+                margin: 0 0 20px;
+                border-radius: 0;
+                @include breakpoint(medium){
+                    font-size: 16px;
+                    margin: 0 0 30px;
+                    padding: 5px 15px;
+                }
+            }
+            button {
+                color: $body-text-color;
+                font-size: 15px;
+                padding: 10px 25px;
+                border-radius: 0;
+                background: $section-bg-color-2;
+                border: 1px solid $border-color-1;
+                transition: $transition;
+                @include breakpoint(medium){
+                    font-size: 16px;
+                    padding: 14px 35px;
+                }
+            }
+            button:hover {
+                color: $text-color-1;
+                background: $main-hover;
+                border: 1px solid $main-hover;
+            }
+        }
+    }
+    .checkout-product {
+        margin: 0 0 30px;
+        overflow: hidden;
+        .single-checkout-product {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 0 10px;
+            @include breakpoint(medium){
+                margin: 0 0 30px;
+            }
+            .product-content {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                .product-img {
+                    flex: 0 0 90px;
+                    margin: 0 10px 0 0;
+                }
+                .product-info {
+                    h3 {
+                        font-size: 16px;
+                        font-weight: 500;
+                        margin: 0 0 5px;
+                        @include breakpoint(medium){
+                            font-size: 18px;
+                        }
+                        @include breakpoint(large){
+                            font-size: 16px;
+                        }
+                        @include breakpoint(xlarge){
+                            font-size: 18px;
+                        }
+                        a {
+                            color: $heading-color-1;
+                            transition: $transition;
+                        }
+                        a:hover {
+                            color: $main-hover;
+                        }
+                    }
+                    span.qty-title {
+                        font-size: 14px;
+                        @include breakpoint(medium){
+                            font-size: 15px;
+                        }
+                        @include breakpoint(large){
+                            font-size: 16px;
+                        }
+                        @include breakpoint(xlarge){
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            .produ-price{
+                font-size: 14px;
+                font-weight: 600;
+                color: $heading-color-1;
+                @include breakpoint(medium){
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .checkout-cart-total {
+        margin: 0 0 30px;
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0 0 20px;
+            @include breakpoint(medium){
+                font-size: 22px;
+            }
+        }
+        .checkout-total {
+            .checkout-title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 0 10px;
+                border-bottom: 2px solid $border-color-1;
+                margin: 0 0 10px;
+                h5 {
+                    font-size: 16px;
+                    color: $body-text-color;
+                    margin: 0;
+                }
+                span {
+                    font-size: 17px;
+                    color: $body-text-color;
+                    margin: 0;
+                }
+            }
+            .checkout-subtotal {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 0 20px;
+                h5 {
+                    font-size: 18px;
+                    margin: 0;
+                    font-weight: 700;
+                }
+                span {
+                    font-size: 18px;
+                    color: $heading-color-1;
+                    font-weight: 700;
+                    margin: 0;
+                }
+            }
+            span {
+                font-size: 13px;
+                margin: 0 0 20px;
+                display: block;
+                input {
+                    width: 15px;
+                    height: 15px;
+                    padding: 0;
+                    margin: 0 5px 0 0;
+                    background: transparent;
+                    border: 1px solid $border-color-1;
+                    border-radius: 2px;
+                }
+            }
+            .checkout_btn {
+                button {
+                    background: $action-bg-color;
+                    border: 1px solid $border-color-1;
+                    color: $heading-color-1;
+                    font-size: 16px;
+                    padding: 12px 30px;
+                    transition: $transition;
+                    width: 100%;
+                }
+                button:hover {
+                    background: $main-hover;
+                    border: 1px solid $main-hover;
+                    color: $text-color-1;
+                }
+            }
+        }
+    }
+}

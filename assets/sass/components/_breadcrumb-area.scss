@@ -1,0 +1,28 @@
+/*==========================
+=> breadcrumb css
+============================*/
+.breadcrumb-area {
+    background: $section-bg-color-2;
+    padding: 50px 0;
+    .breadcrumb-content {
+        h1 {
+            color: $heading-color-1;
+            font-size: 35px;
+            font-weight: 700;
+            margin: 0 0 10px;
+        }
+        .breadcrumb {
+            margin-bottom: 0;
+            li {
+                font-size: 16px;
+                color: $main-hover;
+                a {
+                    color: $heading-color-1;
+                }
+            }
+            li:before {
+                color: $heading-color-1;
+            }
+        }
+    }
+}

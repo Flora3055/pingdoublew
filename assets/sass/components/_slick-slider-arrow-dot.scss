@@ -1,0 +1,79 @@
+/*==========================
+=> slider arrow dot css
+============================*/ 
+
+.product-slider {
+    position: relative;
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+        font-size: 20px;
+        color: $body-text-color;
+        border: 1px solid $body-text-color;
+        background: transparent;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        z-index: 3;
+        opacity: 0;
+        visibility: hidden;
+        transition: $transition;
+    }
+    .slick-next.slick-arrow {
+        left: auto;
+        right: 20px;
+    }
+    .slick-arrow:hover {
+        color: $text-color-1;
+        border: 1px solid $main-hover;
+        background: $main-hover;
+    }
+    .slick-arrow:hover {
+        color: $text-color-1;
+        border: 1px solid $main-hover;
+        background: $main-hover;
+    }
+    .slick-dots {
+        position: absolute;
+        bottom: 15px;
+        transform: translateX(-50%);
+        left: 50%;
+        li {
+            display: inline-block;
+            margin: 0 3px;
+            background: transparent;
+            border: 2px solid $body-text-color;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: $transition;
+            button {
+                display: none;
+            }
+        } 
+        li:hover {
+            background: $main-hover;
+            border: 2px solid $main-hover;
+        }
+        li.slick-active {
+            background: $main-hover;
+            border: 2px solid $main-hover;
+        }
+    }
+}  
+.product-slider:hover {
+    .slick-arrow {
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+    .slick-next.slick-arrow {
+        left: auto;
+        right: 0;
+    }
+}  

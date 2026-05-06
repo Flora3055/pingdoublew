@@ -1,0 +1,112 @@
+/*==========================
+=> contact page css
+============================*/
+.contact-area {
+    .contact-info {
+        margin: 0 0 30px;
+        background: $section-bg-color-2;
+        padding: 30px 30px;
+        @include breakpoint(medium){
+            padding: 85px 40px;
+        }
+        h2 {
+            font-size: 28px;
+            font-weight: 500;
+            margin: 0 0 15px;
+            @include breakpoint(medium){
+                font-size: 30px;
+            }
+        }
+        ul {
+            li {
+                margin: 0 0 30px;
+                @include breakpoint(medium){
+                    margin: 0 0 20px;
+                }
+                h4 {
+                    font-size: 20px;
+                    margin: 0 0 5px;
+                    @include breakpoint(medium){
+                        font-size: 18px;
+                        margin: 0 0 10px;
+                    }
+                }
+                p {
+                    margin-bottom: 0;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .contact-message-area {
+        margin: 0 0 30px;
+        h2 {
+            font-size: 28px;
+            font-weight: 500;
+            margin: 0 0 10px;
+            @include breakpoint(medium){
+                font-size: 30px;
+            }
+        }
+        p {
+            margin: 0 0 20px;
+            font-size: 14px;
+            @include breakpoint(medium){
+                font-size: 16px;
+                margin: 0 0 30px;
+            }
+        }
+        .contact-form {
+            input {
+                font-size: 15px;
+                color: $heading-color-1;
+                height: 50px;
+                padding: 5px 10px;
+                width: 100%;
+                background: $section-bg-color-2;
+                border: 1px solid $border-color-1;
+                margin: 0 0 20px;
+                border-radius: 0;
+                @include breakpoint(medium){
+                    font-size: 16px;
+                    margin: 0 0 40px;
+                    padding: 5px 15px;
+                }
+            }
+            textarea {
+                font-size: 15px;
+                color: $heading-color-1;
+                width: 100%;
+                min-height: 100px;
+                padding: 10px 15px;
+                background: $section-bg-color-2;
+                border: 1px solid $border-color-1;
+                margin: 0 0 20px;
+                border-radius: 0;
+                @include breakpoint(medium){
+                    font-size: 16px;
+                    margin: 0 0 30px;
+                    min-height: 160px;
+                }
+            }
+            button {
+                color: $body-text-color;
+                font-size: 15px;
+                padding: 10px 25px;
+                border-radius: 0;
+                background: $section-bg-color-2;
+                border: 1px solid $border-color-1;
+                transition: $transition;
+                @include breakpoint(medium){
+                    font-size: 16px;
+                    padding: 14px 35px;
+                }
+            }
+            button:hover {
+                color: $text-color-1;
+                background: $main-hover;
+                border: 1px solid $main-hover;
+            }
+        }
+    }
+}

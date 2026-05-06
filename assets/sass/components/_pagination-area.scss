@@ -1,0 +1,45 @@
+/*==========================
+=> pagination css
+============================*/
+.pagination-area {
+    .pagination {
+        justify-content: center;
+        align-items: center;
+        li {
+            margin: 0 5px;
+            a {
+                font-size: 15px;
+                font-weight: 700;
+                width: 40px;
+                height: 40px;
+                background: $section-bg-color-2;
+                color: $heading-color-1;
+                border: 1px solid $section-bg-color-2;
+                padding: 0;
+                line-height: 40px;
+                text-align: center;
+                border-radius: 50% !important;
+                transition: $transition;
+                @include breakpoint(medium){
+                    font-size: 17px;
+                    width: 47px;
+                    height: 47px;
+                    line-height: 47px;
+                }
+            }
+            a.page-link:focus {
+                z-index: 0;
+                color: $text-color-1;
+                background-color: $main-hover;
+                border: 1px solid $main-hover;
+                outline: 0;
+                box-shadow: none;
+            }
+            a.page-link:hover,a.page-link.active{
+                color: $text-color-1;
+                background-color: $main-hover;
+                border: 1px solid $main-hover;
+            }
+        }
+    }
+}

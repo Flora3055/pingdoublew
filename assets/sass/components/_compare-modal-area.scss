@@ -1,0 +1,80 @@
+/*==========================
+=> compare modal css
+============================*/
+
+.compare-modal-area {
+    position: relative;
+    .modal-dialog {
+        max-width: 980px;
+        @include breakpoint(medium){
+            max-width: 750px;
+        }
+        @include breakpoint(large){
+            max-width: 980px;
+        }
+        .modal-content {
+            border: none;
+            border-radius: 0;
+            outline: 0;
+            .modal-header {
+                padding: 0;
+                border-bottom: none;
+                .close {
+                    position: absolute;
+                    right: 2px;
+                    left: auto;
+                    top: 5px;
+                    font-size: 26px;
+                    opacity: 1;
+                    z-index: 1;
+                    transition: $transition;
+                    background-color: transparent;
+                    color: $heading-color-1;
+                    border: none;
+                }
+                .close:hover {
+                    color: $main-hover;
+                }
+            }
+            .modal-body {
+                padding: 40px;
+            .compare-content {
+                .table {
+                    thead {
+                        tr {
+                            text-align: center;
+                            th {
+                                color: $text-color-2;
+                                font-weight: 600;
+                                border: 1px solid $border-color-1;
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            text-align: center;
+                            td {
+                                border: 1px solid $border-color-1;
+                                color: $heading-color-1;
+                                .remove-compare {
+                                    background: transparent;
+                                    border: none;
+                                    font-size: 20px;
+                                    color: $body-text-color;
+                                    transition: $transition;
+                                }
+                                .remove-compare:hover {
+                                    color: $main-hover;
+                                }
+                            }
+                        }
+                        tr:hover {
+                            --bs-table-accent-bg: transpartent !important;
+                        }
+                    }
+                }
+            }
+            }
+        }
+    }
+}

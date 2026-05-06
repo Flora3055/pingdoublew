@@ -1,0 +1,137 @@
+/*==========================
+=> faq area css 
+============================*/
+.faq-area {
+    .faq-info {
+        margin: 0 0 30px;
+        .single-collapse {
+            border: 2px solid $border-color-2;
+            margin: 0 0 -2px 0;
+            h2 {
+                font-size: 16px;
+                font-weight: 700;
+                margin: 0;
+                transition: $transition;
+                cursor: pointer;
+                position: relative;
+                padding: 20px 10px 20px 10px;
+                @include breakpoint(medium){
+                    font-size: 22px;
+                    padding: 20px 60px 20px 30px;
+                }
+            }
+            h2::before{
+                background-color: $section-bg-color-2;
+                color: $heading-color-1;
+                font-size: 25px;
+                height: 35px;
+                width: 35px;
+                text-align: center;
+                line-height: 30px;
+                position: absolute;
+                font-family: 'fontawesome';
+                right: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                content: "\f107";
+                @include breakpoint(medium){
+                    font-size: 30px;
+                    height: 40px;
+                     width: 45px;
+                     line-height: 40px;
+                }
+            }
+            h2[aria-expanded="true"]::before {
+                content: "\f106";
+            }
+            .faq-body {
+                padding: 10px 10px 20px;
+                @include breakpoint(medium){
+                    padding: 15px 40px 30px;
+                }
+                p {
+                    font-size: 14px;
+                    margin: 0 0 0;
+                    line-height: 1.8;
+                    @include breakpoint(medium){
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .contact-support {
+        margin: 0 0 30px;
+        h2 {
+            font-size: 22px;
+            font-weight: 600;
+            margin: 0 0 20px;
+            @include breakpoint(medium){
+                font-size: 30px;
+            }
+        }
+        span {
+            color: $heading-color-1;
+            font-size: 16px;
+            display: block;
+            margin: 0 0 10px 0;
+            @include breakpoint(medium){
+                font-size: 18px;
+                margin: 0 0 15px 0;
+            }
+            i {
+                font-size: 20px;
+                margin: 0 10px 0 0;
+                @include breakpoint(medium){
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    .faq-newsletter-area {
+        margin: 0 0 30px;
+        h2 {
+            font-size: 22px;
+            font-weight: 600;
+            margin: 0 0 20px;
+            @include breakpoint(medium){
+                font-size: 30px;
+            }
+        }
+        .newaletter-form {
+            position: relative;
+            input {
+                font-size: 15px;
+                color: $heading-color-1;
+                height: 50px;
+                padding:10px 40px 10px 10px;
+                width: 100%;
+                background: $section-bg-color-2;
+                border: 1px solid $border-color-1;
+                border-radius: 0;
+                @include breakpoint(medium){
+                    height: 55px;
+                }
+            }
+            button {
+                position: absolute;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                right: 8px;
+                left: auto;
+                background: transparent;
+                border: none;
+                font-size: 18px;
+                color: $heading-color-1;
+                transition: $transition;
+                @include breakpoint(medium){
+                    font-size: 20px;
+                }
+            }
+            button:hover {
+                color: $main-hover;
+            }
+        }
+    }
+}

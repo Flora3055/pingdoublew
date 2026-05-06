@@ -1,0 +1,34 @@
+/*==========================
+=> error found area css
+============================*/
+.error-found-area {
+    .error-found-content {
+        h1 {
+            color: $main-hover;
+            font-size: 120px;
+            line-height: 1;
+            margin: 0 0 10px;
+            font-weight: 500;
+        }
+        h2 {
+            font-size: 30px;
+            font-weight: 500;
+            margin: 0 0 20px;
+        }
+        p {
+            font-size: 16px;
+            margin: 0 0 40px;
+        }
+        a {
+            color: $heading-color-1;
+            font-size: 17px;
+            padding: 12px 60px;
+            background: $section-bg-color-2;
+            transition: $transition;
+        }
+        a:hover {
+            color: $text-color-1;
+            background: $main-hover;
+        }
+    }
+}

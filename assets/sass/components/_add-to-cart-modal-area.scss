@@ -1,0 +1,91 @@
+/*==========================
+=> cart modal css
+============================*/
+.add-to-cart-modal-area {
+    position: relative;
+    .modal-dialog {
+        max-width: 320px;
+        @include breakpoint(medium){
+            max-width: 500px;
+        }
+        .modal-content {
+            border: none;
+            border-radius: 0;
+            outline: 0;
+            .modal-header {
+                padding: 0;
+                border-bottom: none;
+                .close {
+                    position: absolute;
+                    right: 2px;
+                    left: auto;
+                    top: 0;
+                    font-size: 26px;
+                    opacity: 1;
+                    z-index: 1;
+                    transition: $transition;
+                    background-color: transparent;
+                    color: $heading-color-1;
+                    border: none;
+                }
+                .close:hover {
+                    color: $main-hover;
+                }
+            }
+            .modal-body {
+                padding: 15px;
+                .cart-modal-content {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    .cart-modal-img {
+                        flex: 0 0 100%;
+                        margin: 0 0 15px;
+                        @include breakpoint(medium){
+                            flex: 0 0 30%;
+                            margin-right: 20px;
+                        }
+                    }
+                    .cart-product-info {
+                        flex: 0 0 100%;
+                        @include breakpoint(medium){
+                            flex: 0 0 60%;
+                        }
+                        h3 {
+                            font-size: 20px;
+                            font-weight: 700;
+                            margin: 0 0 10px;
+                            color: $heading-color-1
+                        }
+                        p {
+                            font-size: 15px;
+                            color: $body-text-color;
+                            margin: 0 0 20px;
+                            i {
+                                color: $main-hover;
+                                font-size: 20px;
+                            }
+                        }
+                        .action-button {
+                            background: $action-bg-color;
+                            color: $heading-color-1;
+                            padding: 0 20px;
+                            height: 45px;
+                            font-size: 15px;
+                            line-height: 44px;
+                            font-weight: 500;
+                            transition: $transition;
+                        }
+                        .action-button:hover {
+                            color: $text-color-1;
+                            background: $main-hover;
+                        }
+                        .action-button + .action-button {
+                            margin: 0 0 0 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

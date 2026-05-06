@@ -1,0 +1,139 @@
+/*==========================
+=> shopping cart css
+============================*/
+.shoping-cart {
+    .shoping-cart-table {
+        .table {
+            tbody {
+                tr {
+                    display: block;
+                    width: 100%;
+                    border-bottom: 2px solid $border-color-1;
+                    @include breakpoint(medium){
+                        display: table;
+                    }
+                    td {
+                        display: block;
+                        padding: 15px 20px;
+                        text-align: center;
+                        border-bottom: 2px solid $border-color-1;
+                        @include breakpoint(medium){
+                            vertical-align: middle;
+                            display: revert;
+                            border-bottom: none;
+                            padding: 15px 10px;
+                        }
+                        @include breakpoint(large){
+                            padding: 15px 20px;
+                        }
+                    }
+                    .product-image {
+                        img {
+                            max-width: 100px;
+                        }
+                    }
+                    .product-info {
+                        h4 {
+                            font-size: 18px;
+                            @include breakpoint(large){
+                                font-size: 20px;
+                            }
+                            margin: 0;
+                            a {
+                                color: $heading-color-1;
+                                font-weight: 500;
+                                transition: $transition;
+                            }
+                            a:hover {
+                                color: $main-hover;
+                            }
+                        }
+                    }
+                    .product-price {
+                        font-size: 18px;
+                        color: $heading-color-1;
+                    }
+                    .product-stock {
+                        font-size: 16px;
+                    }
+                    .product-remove {
+                        font-size: 25px;
+                        color: $heading-color-1;
+                        cursor: pointer;
+                        transition: $transition;
+                    }
+                    .product-remove:hover {
+                        color: $main-hover;
+                    }
+                    .product-add-cart {
+                        a {
+                            font-size: 16px;
+                            background: $section-bg-color-2;
+                            color: $heading-color-1;
+                            padding: 10px 30px;
+                            transition: $transition;
+                            @include breakpoint(medium){
+                                padding: 10px 20px;
+                            }
+                            @include breakpoint(large){
+                                padding: 10px 30px;
+                            }
+                        }
+                        a:hover {
+                            background: $main-hover;
+                            color: $text-color-1;
+                        }
+                    }
+                    .product-price.total-price {
+                        font-weight: 700;
+                    }
+                    .product-qty {
+                        position: relative;
+                        .cart-plus-minus {
+                            background: $action-bg-color;
+                            border: 1px solid $border-color-1;
+                            overflow: hidden;
+                            padding: 8px 5px 7px 5px;
+                            width: 80px;
+                            height: 55px;
+                            margin: 0 auto;
+                            @include breakpoint(medium){
+                                width: 110px;
+                            }
+                            .qtybutton {
+                                color: $heading-color-1;
+                                cursor: pointer;
+                                float: left;
+                                font-size: 16px;
+                                font-weight: 600;
+                                height: 28px;
+                                line-height: 28px;
+                                position: relative;
+                                text-align: center;
+                                width: 20px;
+                            }
+                            input.cart-plus-minus-box {
+                                background: transparent;
+                                color: $heading-color-1;
+                                border: medium none;
+                                float: left;
+                                font-size: 20px;
+                                height: 36px;
+                                margin: 0;
+                                padding: 0;
+                                text-align: center;
+                                width: 26px;
+                                @include breakpoint(medium){
+                                    width: 50px;
+                                }
+                            }
+                            .qtybutton.dec, .qtybutton.inc {
+                                margin-top: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

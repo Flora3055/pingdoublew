@@ -1,0 +1,30 @@
+/*==========================
+=> service area css
+============================*/  
+    
+    .service-area {
+        .service-item {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            .service-icon {
+                font-size: 45px;
+                color: $heading-color-1;
+                flex: 0 0 50px;
+                margin-right: 10px;
+            }
+            .service-feature {
+                h4 {
+                    font-size: 17px;
+                    margin-bottom: 5px;
+                    color: $heading-color-1;
+                    font-weight: 500;
+                }
+                p {
+                    margin: 0;
+                    color: $body-text-color;
+                }
+            }
+        }
+    }

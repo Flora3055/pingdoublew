@@ -1,0 +1,191 @@
+/*==========================
+=> cart area css
+============================*/
+.cart-area {
+    .shoping-cart {
+        .shoping-cart-table {
+            .table {
+                tbody {
+                    tr {
+                        .product-price {
+                            color: $body-text-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cart-submit-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0 35px;
+        border-bottom: 2px solid $border-color-1;
+        margin: 0 0 40px;
+        flex-wrap: wrap;
+        .cart-coupon {
+            input {
+                background: $action-bg-color;
+                border: 1px solid $border-color-1;
+                max-width: 100%;
+                font-size: 16px;
+                padding: 10px;
+                color: $heading-color-1;
+                height: 50px;
+                width: 100%;
+                margin: 0 0 10px;
+                @include breakpoint(medium){
+                    max-width: 150px;
+                    margin: 0 0 0;
+                    width: auto;
+                }
+                @include breakpoint(large){
+                    max-width: 300px;
+                }
+            }
+            button {
+                background: $action-bg-color;
+                border: 1px solid $border-color-1;
+                color: $heading-color-1;
+                font-size: 16px;
+                padding: 12px 15px;
+                margin: 0 0 10px 0;
+                transition: $transition;
+                width: 100%;
+                text-align: center;
+                @include breakpoint(medium){
+                    padding: 12px 8px;
+                    margin: 0 0 0 2px;
+                    width: auto;
+                }
+                @include breakpoint(large){
+                    padding: 12px 15px;
+                    margin: 0 0 0 10px;
+                }
+                @include breakpoint(xlarge){
+                    padding: 12px 30px;
+                }
+            }
+            button:hover {
+                background: $main-hover;
+                border: 1px solid $main-hover;
+                color: $text-color-1;
+            }
+        }
+        .cart-button {
+            .button {
+                background: $action-bg-color;
+                border: 1px solid $border-color-1;
+                color: $heading-color-1;
+                font-size: 16px;
+                padding: 12px 15px;
+                margin: 0 0 10px 0;
+                transition: $transition;
+                width: 100%;
+                text-align: center;
+                @include breakpoint(medium){
+                    padding: 12px 8px;
+                    margin: 0 0 0 2px;
+                    width: auto;
+                }
+                @include breakpoint(large){
+                    padding: 12px 15px;
+                    margin: 0 0 0 10px;
+                }
+                @include breakpoint(xlarge){
+                    padding: 12px 30px;
+                }
+            }
+            .button:first-child {
+                margin: 0 0 10px 0;
+                @include breakpoint(medium){
+                    margin: 0 0 0 0;
+                }
+            }
+            .button:hover {
+                background: $main-hover;
+                border: 1px solid $main-hover;
+                color: $text-color-1;
+            }
+        }
+    }
+    .cart-note-area {
+        margin: 0 0 30px;
+        h3 {
+            font-size: 25px;
+            font-weight: 700;
+            margin: 0 0 15px;
+        }
+        textarea {
+            background: $action-bg-color;
+            border: 1px solid $border-color-1;
+            width: 100%;
+            font-size: 16px;
+            padding: 10px;
+            color: $heading-color-1;
+            height: 150px;
+            @include breakpoint(medium){
+                height: 200px;
+            }
+        }
+    }
+    .shoping-cart-total {
+        margin: 0 0 30px;
+        h3 {
+            font-size: 25px;
+            font-weight: 700;
+            margin: 0 0 15px;
+        }
+        .cart-total {
+            .cart-title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 0 10px;
+                border-bottom: 2px solid $border-color-1;
+                margin: 0 0 10px;
+                h5 {
+                    font-size: 16px;
+                    color: $body-text-color;
+                    margin: 0;
+                }
+                span {
+                    font-size: 17px;
+                    color: $body-text-color;
+                }
+            }
+            .cart-subtotal {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 0 10px;
+                h5 {
+                    font-size: 18px;
+                    margin: 0;
+                    font-weight: 700;
+                }
+                span {
+                    font-size: 18px;
+                    color: $heading-color-1;
+                    font-weight: 700;
+                }
+            }
+            .checkout_btn {
+                button {
+                    background: $action-bg-color;
+                    border: 1px solid $border-color-1;
+                    color: $heading-color-1;
+                    font-size: 16px;
+                    padding: 12px 30px;
+                    transition: $transition;
+                    width: 100%;
+                }
+                button:hover {
+                    background: $main-hover;
+                    border: 1px solid $main-hover;
+                    color: $text-color-1;
+                }
+            }
+        }
+    }
+}

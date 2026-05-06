@@ -1,0 +1,352 @@
+/*==========================
+=> product details css
+============================*/
+.product-details-area {
+    overflow: hidden;
+    .single-product-image {
+        position: relative;
+        margin: 0 0 30px;
+        .product-badges {
+            span {
+                position: absolute;
+                top: 10px;
+                background: $badges-color;
+                color: $text-color-1;
+                padding: 1px 14px;
+                display: inline-block;
+                text-align: center;
+                font-size: 13px;
+                font-weight: 700;
+                border-radius: 0 3px 3px 0;
+                left: 0;
+            }
+            span.new {
+                left: auto;
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+        }
+        .product-large-image {
+            .large-image-slide {
+                position: relative;
+                .slick-arrow {
+                    color: $heading-color-1;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font-size: 45px;
+                    left: 0;
+                    right: auto;
+                    z-index: 3;
+                    transition: $transition;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                .slick-next.slick-arrow {
+                    left: auto;
+                    right: 0;
+                }
+                .slick-arrow:hover {
+                    color: $main-hover;
+                }
+            }
+        }
+        .product-large-image:hover {
+            .large-image-slide {
+                .slick-arrow {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+        .thum-image {
+            .thum-image-slide {
+                position: relative;
+                .single-thum-image {
+                    border: 2px solid transparent;
+                    transition: $transition;
+                }
+                .single-thum-image.slick-current.slick-active{
+                    border: 2px solid $main-hover;
+                }
+                .slick-arrow {
+                    color: $heading-color-1;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font-size: 30px;
+                    left: 0;
+                    right: auto;
+                    z-index: 3;
+                    transition: $transition;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                .slick-next.slick-arrow {
+                    left: auto;
+                    right: 0;
+                }
+                .slick-arrow:hover {
+                    color: $main-hover;
+                }
+            }
+        }
+        .thum-image:hover {
+            .thum-image-slide {
+                .slick-arrow {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+    .product-details-info {
+        margin: 0 0 30px;
+        h2 {
+            font-size: 26px;
+            font-weight: 500;
+            margin: 0 0 12px;
+            @include breakpoint(medium){
+                font-size: 30px;
+            }
+        }
+        .product-rating {
+            margin-bottom: 10px;
+            i {
+                margin: 0 4px 0 0;
+                color: $rating-color;
+                font-size: 18px;
+            }
+        }
+        .product-price {
+            margin-bottom: 10px;
+            font-size: 20px;
+            span {
+                font-weight: 600;
+                color: $main-hover;
+            }
+            del {
+                margin-left: 8px;
+                font-size: 17px;
+            }
+        }
+        .product-description {
+            margin: 0 0 20px;
+            p {
+                font-size: 14px;
+                margin: 0 0 0;
+                line-height: 1.8;
+                @include breakpoint(medium){
+                    font-size: 16px;
+                }
+            }
+        }
+        .product-varient {
+            margin: 0 0 30px;
+            h3 {
+                font-size: 22px;
+                font-weight: 600;
+                margin: 0 0 15px;
+            }
+            ul {
+                li {
+                    display: inline-block;
+                    margin: 0 8px 0 0;
+                    @include breakpoint(medium){
+                        margin: 0 15px 0 0;
+                    }
+                    a {
+                        font-size: 18px;
+                        color: $body-text-color;
+                        transition: $transition;
+                    }
+                    a:hover {
+                        color: $main-hover;
+                    }
+                }
+            }
+            .varient-select {
+                width: 280px;
+                height: 45px;
+                background: $bg-color-1;
+                border: 1px solid $border-color-2;
+                border-radius: 0;
+                font-size: 16px;
+                color: $body-text-color;
+                padding: 0 20px 0 10px;
+                @include breakpoint(medium){
+                    width: 300px;
+                }
+            }
+        }
+        .product-varient.color {
+            ul {
+                li {
+                    background-color: $black-color;
+                    border: 1px solid transparent;
+                    height: 25px;
+                    width: 25px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    @include breakpoint(medium){
+                        height: 28px;
+                        width: 28px;
+                    }
+                }
+                li.blue {
+                    background-color: $blue-color;
+                }
+                li.green {
+                    background-color: $green-color;
+                }
+                li.pink {
+                    background-color: $pink-color;
+                }
+                li.white {
+                    background-color: $white-color;
+                    border: 1px solid $border-color-1;
+                }
+                li.red {
+                    background-color: $red-color;
+                }
+                li.yellow {
+                    background-color: $yellow-color;
+                }
+            }
+        }
+        .product-cart {
+            margin: 0 0 20px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            @include breakpoint(medium){
+                flex-wrap: unset;
+            }
+            .cart-plus-minus {
+                background: $action-bg-color;
+                border: 1px solid $border-color-1;
+                overflow: hidden;
+                padding: 8px 5px 7px 5px;
+                width: 80px;
+                height: 55px;
+                margin: 0 15px 0 0;
+                @include breakpoint(medium){
+                    width: 110px;
+                }
+                .qtybutton {
+                    color: $heading-color-1;
+                    cursor: pointer;
+                    float: left;
+                    font-size: 16px;
+                    font-weight: 600;
+                    height: 28px;
+                    line-height: 28px;
+                    position: relative;
+                    text-align: center;
+                    width: 20px;
+                }
+                input.cart-plus-minus-box {
+                    background: transparent;
+                    color: $heading-color-1;
+                    border: medium none;
+                    float: left;
+                    font-size: 20px;
+                    height: 36px;
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                    width: 26px;
+                    @include breakpoint(medium){
+                        width: 50px;
+                    }
+                }
+                .qtybutton.dec, .qtybutton.inc {
+                    margin-top: 5px;
+                }
+            }
+            .action-button {
+                background: $action-bg-color;
+                color: $heading-color-1;
+                padding: 0 30px;
+                height: 55px;
+                font-size: 18px;
+                line-height: 55px;
+                font-weight: 500;
+                transition: $transition;
+                margin: 0 15px 0 0;
+            }
+            .action-button:hover {
+                color: $text-color-1;
+                background: $main-hover;
+            }
+            .wishlist.action-button,.compare-product.action-button {
+                font-size: 21px;
+                width: 60px;
+                height: 55px;
+                padding: 0;
+                text-align: center;
+                margin: 15px 0 0 0;
+                @include breakpoint(xsmall){
+                    margin: 0 0 0 0;
+                }
+            }
+            .compare-product.action-button {
+                margin: 15px 0 0 15px;
+                @include breakpoint(xsmall){
+                    margin: 0 0 0 15px;
+                }
+            }
+        }
+        .product-sku {
+            font-size: 17px;
+            color: $heading-color-1;
+            margin: 0 0 10px;
+            span {
+                color: $body-text-color;
+                font-size: 15px;
+                margin: 0 0 0 8px;
+            }
+        }
+        .product-tag {
+            margin: 0 0 10px;
+            h4 {
+                font-size: 17px;
+                color: $heading-color-1;
+                font-weight: 500;
+                display: inline-block;
+            }
+            a {
+                color: $body-text-color;
+                font-size: 15px;
+                transition: $transition;
+                display: inline-block;
+                margin: 0 0 0 5px;
+                @include breakpoint(medium){
+                    font-size: 16px;
+                    margin: 0 0 0 10px;
+                }
+            }
+            a:hover {
+                color: $main-hover;
+            }
+        }
+        .social-media {
+            margin: 0 0 10px;
+            h4 {
+                font-size: 17px;
+                color: $heading-color-1;
+                font-weight: 500;
+                display: inline-block;
+            }
+            a {
+                font-size: 18px;
+                margin: 0 0 0 10px;
+                color: $body-text-color;
+                transition: $transition;
+            }
+            a:hover {
+                color: $main-hover;
+            }
+        }
+    }
+}

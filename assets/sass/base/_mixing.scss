@@ -1,0 +1,50 @@
+/*==========================
+=> Mixins css
+============================*/
+
+// breakpoints
+@mixin breakpoint($point) {
+
+    // mobile 360 to Upper
+    @if $point == xsmall {
+        @media (min-width: 360px) { 
+            @content ; 
+        }
+    }
+
+    // small 576 to Upper
+    @if $point == small {
+        @media (min-width: 576px) { 
+            @content ; 
+        }
+    }
+
+    // medium 768 to Upper
+    @if $point == medium {
+        @media (min-width: 768px) { 
+            @content ; 
+        }
+    }
+    
+    // large 992 to Upper
+    @if $point == large {
+        @media (min-width: 992px) { 
+            @content ; 
+        }
+    }
+
+    // extra large 1200 to Upper
+    @if $point == xlarge {
+        @media (min-width: 1200px) { 
+            @content ; 
+        }
+    }
+
+    // high large 1400 to Upper
+    @if $point == xxlarge {
+        @media (min-width: 1400px) { 
+            @content ; 
+        }
+    }
+
+}

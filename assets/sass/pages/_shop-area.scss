@@ -1,0 +1,77 @@
+/*==========================
+=> shop page css
+============================*/
+.shop-area {
+    .shop-filter {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 0 40px;
+        @include breakpoint(medium){
+            flex-wrap: unset;
+            justify-content: space-between;
+        }
+        .shop-grid-list-menu{
+            margin: 0 20px 15px 0;
+            @include breakpoint(medium){
+                margin: 0 0 0;
+            }
+            ul {
+                li {
+                    margin: 0 10px 0 0;
+                    @include breakpoint(medium){
+                        margin: 0 20px 0 0;
+                    } 
+                    a {
+                        color: $body-text-color;
+                        border: 1px solid $border-color-2;
+                        background: transparent;
+                        font-size: 20px;
+                        width: 42px;
+                        height: 42px;
+                        line-height: 45px;
+                        text-align: center;
+                        transition: $transition;
+                    }
+                    a:hover,a.active {
+                        color: $text-color-1;
+                        border: 1px solid $main-hover;
+                        background: $main-hover;
+                    }
+                }
+                li:last-child {
+                    margin: 0 0 0 0;
+                }
+            }
+        }
+        .select-area {
+            margin: 0 0 15px;
+            @include breakpoint(medium){
+                margin: 0 0 0;
+            }
+            .form-select {
+                height: 42px;
+                border-radius: 0;
+                width: 250px;
+                color: $body-text-color;
+                border: 1px solid $border-color-2;
+                font-size: 16px;
+            }
+            .form-select:focus {
+                outline: 0;
+                box-shadow: none;
+            }
+        }
+        .showing-page-number {
+            p {
+                font-size: 16px;
+                font-weight: 500;
+                color: $body-text-color;
+                margin: 0;
+            }
+        }
+    }
+    .pagination-area {
+        margin: 10px 0 0;
+    }
+}

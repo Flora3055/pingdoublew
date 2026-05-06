@@ -1,0 +1,14 @@
+/*==========================
+=> google map css
+============================*/
+.google-map {
+    .google-map {
+        iframe {
+            width: 100%;
+            height: 350px;
+            @include breakpoint(medium){
+                height: 550px;
+            }
+        }
+    }
+}

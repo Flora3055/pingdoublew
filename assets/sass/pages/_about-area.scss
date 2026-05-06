@@ -1,0 +1,23 @@
+/*==========================
+=> about area css
+============================*/
+.about-area {
+    .about-info {
+        h2 {
+            font-size: 22px;
+            margin: 0 0 20px;
+            font-weight: 700;
+            @include breakpoint(medium){
+                font-size: 30px;
+            }
+        }
+        p {
+            font-size: 14px;
+            margin: 0 0 30px;
+            color: $body-text-color;
+            @include breakpoint(medium){
+                font-size: 16px;
+            }
+        }
+    }
+}

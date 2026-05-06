@@ -1,0 +1,33 @@
+/*==========================
+=> header css
+============================*/
+
+.header-bottom.header-bottom-2.header-transperant.header-sticky {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background: transparent;
+    z-index: 77;
+    .main-menu.menu-2 {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: static;
+        nav{
+            ul{
+                li{
+                    display: inline-block;
+                    position: relative;
+                    a {
+                        color: $heading-color-1;
+                    }
+                }
+            }
+        }
+    }
+}
+.header-transperant.sticky-active {
+    background-color: $bg-color-1 !important;
+    position: fixed !important;
+}
+

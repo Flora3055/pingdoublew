@@ -1,0 +1,63 @@
+/*==========================
+=> single product css
+============================*/
+.single-product-area {
+    .feature-area {
+        .single-feature {
+            display: flex;
+            align-items: center;
+            margin: 0 0 40px;
+            .feature-img {
+                margin-right: 20px;
+                a {
+                    img {
+                        width: 160px;
+                        height: 100px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .feature-content {
+                h4 {
+                    font-weight: 600;
+                    font-size: 18px;
+                    letter-spacing: .5px;
+                    margin: 0 0 10px;
+                    @include breakpoint(medium){
+                        font-size: 22px;
+                    }
+                    a {
+                        color: $heading-color-1;
+                        transition: $transition;
+                    }
+                    a:hover {
+                        color: $main-hover;
+                    }
+                }
+                p {
+                    font-size: 12px;
+                    margin: 0;
+                    color: $body-text-color;
+                    @include breakpoint(medium){
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .feature-content-align {
+        .single-feature {
+            flex-direction: row-reverse;
+            .feature-img {
+                margin-right: 0;
+                margin-left: 20px;
+            }
+            .feature-content {
+                text-align: right;
+            }
+        }
+    }
+    .single-img {
+        margin: 0 0 40px;
+    }
+}

@@ -1,0 +1,119 @@
+/*==========================
+=> product list css
+============================*/
+.product-list-item {
+    position: relative;
+    margin-bottom: 30px;
+    .product-image {
+        position: relative;
+        overflow: hidden;
+        .product-badges {
+            span {
+                position: absolute;
+                top: 10px;
+                background: $badges-color;
+                color: $text-color-1;
+                padding: 1px 6px;
+                display: inline-block;
+                text-align: center;
+                font-size: 12px;
+                font-weight: 700;
+                border-radius: 0 3px 3px 0;
+                left: 0;
+                @include breakpoint(medium){
+                    font-size: 13px;
+                    padding: 1px 14px;
+                }
+            }
+            span.new {
+                left: auto;
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+        }
+    }
+    .product-info {
+        padding-top: 20px;
+        @include breakpoint(medium){
+            padding-top: 0;
+        }
+        h3 {
+            margin-bottom: 10px;
+            a {
+                font-size: 19px;
+                color: #000;
+                transition: $transition;
+                @include breakpoint(medium){
+                    font-size: 22px;
+                }
+            }
+            a:hover {
+                color: $main-hover;
+            }
+        }
+        .product-rating {
+            margin-bottom: 10px;
+            i {
+                margin: 0 4px 0 0;
+                color: $rating-color;
+                font-size: 15px;
+            }
+        }
+        .product-price {
+            font-size: 17px;
+            margin-bottom: 10px;
+            span {
+                font-weight: 600;
+                color: $main-hover;
+            }
+            del {
+                margin-left: 8px;
+                font-size: 15px;
+            }
+        }
+        .product-description {
+            margin-bottom: 30px;
+            p {
+                font-size: 14px;
+                line-height: 1.8;
+                color: $body-text-color;
+                @include breakpoint(medium){
+                    font-size: 16px;
+                }
+            }
+        }
+        .product-action {
+            ul {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                li {
+                    display: inline-block;
+                    transition: $transition;
+                    margin: 0 10px 0 0;
+                    a {
+                        color: $heading-color-1;
+                        font-size: 16px;
+                        display: block;
+                        padding: 10px 14px;
+                        transition: $transition;
+                        background: $action-bg-color;
+                        text-align: center;
+                        @include breakpoint(medium){
+                            font-size: 18px;
+                            padding: 10px 15px;
+                        }
+                        @include breakpoint(large){
+                            font-size: 20px;
+                            padding: 10px 20px;
+                        }
+                    }
+                    a:hover {
+                        color: $text-color-1;
+                        background: $main-hover;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,361 @@
+/*==========================
+=> blog details page css
+============================*/
+.blog-details-area {
+    .single-blog-details {
+        .blog-meta {
+            margin: 0 0 10px;
+            ul {
+                li {
+                    display: inline-block;
+                    margin-right: 15px;
+                    i {
+                        margin-right: 5px;
+                    }
+                    a {
+                        color: $body-text-color;
+                        transition: $transition;
+                        i {
+                            margin-right: 5px;
+                        }
+                    }
+                    a:hover {
+                        color: $main-hover;
+                    }
+                }
+            }
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 500;
+            margin: 0 0 20px;
+            @include breakpoint(medium){
+                font-size: 30px;
+                margin: 0 0 30px;
+            }
+        }
+        .blog-img {
+            margin: 0 0 20px;
+            @include breakpoint(medium){
+                margin: 0 0 30px;
+            }
+            img {
+                width: 100%;
+            }
+        }
+        p {
+            font-size: 14px;
+            line-height: 1.8;
+            margin: 0 0 20px;
+            @include breakpoint(medium){
+                font-size: 16px;
+                margin: 0 0 30px;
+            }
+        }
+        .single-image {
+            margin: 0 0 20px;
+            @include breakpoint(medium){
+                margin: 0 0 30px;
+            }
+        }
+        blockquote {
+            color: $heading-color-1;
+            font-size: 14px;
+            margin: 0 0 20px;
+            background: $section-bg-color-2;
+            padding: 20px 15px;
+            border-left: 4px solid $main-hover;
+            @include breakpoint(medium){
+                font-size: 16px;
+                padding: 30px 40px;
+                margin: 0 0 30px;
+            }
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0 0 10px;
+            @include breakpoint(medium){
+                font-size: 22px;
+                margin: 0 0 15px;
+            }
+        }
+        .blog-tag-social {
+            margin: 0 0 20px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            @include breakpoint(medium){
+                justify-content: space-between;
+                margin: 0 0 30px;
+            }
+            .blog-tag {
+                display: flex;
+                align-items: center;
+                margin: 0 0 10px;
+                @include breakpoint(medium){
+                    margin: 0 0 0;
+                }
+                h4 {
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin: 0 10px 0 0;
+                    @include breakpoint(medium){
+                        font-size: 18px;
+                    }
+                }
+                ul {
+                    li {
+                        display: inline-block;
+                        margin-right: 5px;
+                        position: relative;
+                        a {
+                            color: $body-text-color;
+                            font-size: 15px;
+                            transition: $transition;
+                            @include breakpoint(medium){
+                                font-size: 16px;
+                            }
+                        }
+                        a:hover {
+                            color: $main-hover;
+                        }
+                    }
+                    li:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+            .blog-social {
+                display: flex;
+                align-items: center;
+                h4 {
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin: 0 10px 0 0;
+                    @include breakpoint(medium){
+                        font-size: 18px;
+                    }
+                }
+                ul {
+                    li {
+                        display: inline-block;
+                        margin-right: 5px;
+                        position: relative;
+                        a {
+                            color: $body-text-color;
+                            font-size: 15px;
+                            transition: $transition;
+                            @include breakpoint(medium){
+                                font-size: 16px;
+                            }
+                        }
+                        a:hover {
+                            color: $main-hover;
+                        }
+                    }
+                    li:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        .blog-next-previous {
+            border-top: 1px solid $border-color-1;
+            border-bottom: 1px solid $border-color-1;
+            padding: 15px 0;
+            margin: 0 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .blog-next {
+                a {
+                    i {
+                        margin: 0 5px 0 0;
+                    }
+                    font-size: 16px;
+                    color: $heading-color-1;
+                    transition: $transition;
+                    @include breakpoint(medium){
+                        font-size: 18px;
+                    }
+                }
+                a:hover {
+                    color: $main-hover;
+                }
+            }
+            .blog-previous {
+                a {
+                    i {
+                        margin: 0 0 0 5px;
+                    }
+                    font-size: 16px;
+                    color: $heading-color-1;
+                    transition: $transition;
+                    @include breakpoint(medium){
+                        font-size: 18px;
+                    }
+                }
+                a:hover {
+                    color: $main-hover;
+                }
+            }
+        }
+        .blog-comments-area {
+            margin: 0 0 20px;
+            @include breakpoint(medium){
+                margin: 0 0 40px;
+            }
+            h2 {
+                font-size: 20px;
+                font-weight: 500;
+                margin: 0 0 10px;
+                @include breakpoint(medium){
+                    font-size: 25px;
+                    margin: 0 0 20px;
+                }
+            }
+            .blog-comment-item {
+                margin: 0 0 10px;
+                overflow: hidden;
+                .single-comment {
+                    display: flex;
+                    align-items: center;
+                    margin: 0 0 20px;
+                    flex-wrap: wrap;
+                    @include breakpoint(medium){
+                        flex-wrap: unset;
+                        margin: 0 0 30px;
+                        justify-content: space-between;
+                    }
+                    .author-image {
+                        margin: 0 0 20px 0;
+                        @include breakpoint(medium){
+                            margin: 0 30px 0 0;
+                        }
+                        img {
+                            border-radius: 50%;
+                            width: 100px;
+                            height: 100px;
+                            @include breakpoint(medium){
+                                margin: 0 30px 0 0;
+                                width: auto;
+                                height: auto;
+                            }
+                        }
+                    }
+                    .author-infor {
+                        display: flex;
+                        justify-content: space-between;
+                        .author-content {
+                            padding: 0 10px 0 0;
+                            @include breakpoint(medium){
+                                padding: 0 40px 0 0;
+                            }
+                            h4 {
+                                font-size: 16px;
+                                color: $body-text-color;
+                                margin: 0 0 5px;
+                                font-weight: 500;
+                                @include breakpoint(medium){
+                                    font-size: 18px;
+                                    margin: 0 0 10px;
+                                }
+                            }
+                            span {
+                                display: block;
+                                margin: 0 0 5px;
+                            }
+                            p {
+                                margin: 0;
+                                font-size: 15px;
+                                @include breakpoint(medium){
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                        .reply-button {
+                            a {
+                                font-size: 14px;
+                                background: $bg-color-2;
+                                color: $text-color-1;
+                                padding: 5px 15px;
+                                border-radius: 20px;
+                                transition: $transition;
+                                @include breakpoint(medium){
+                                    font-size: 16px;
+                                }
+                            }
+                            a:hover {
+                                background: $main-hover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .blog-form {
+            h2 {
+                font-size: 20px;
+                font-weight: 500;
+                margin: 0 0 10px;
+                @include breakpoint(medium){
+                    font-size: 25px;
+                    margin: 0 0 20px;
+                }
+            }
+            .comment-form {
+                textarea {
+                    font-size: 15px;
+                    color: $heading-color-1;
+                    width: 100%;
+                    min-height: 100px;
+                    padding: 10px 15px;
+                    background: $section-bg-color-2;
+                    border: 1px solid $border-color-1;
+                    margin: 0 0 20px;
+                    border-radius: 0;
+                    @include breakpoint(medium){
+                        font-size: 16px;
+                        margin: 0 0 30px;
+                        min-height: 160px;
+                    }
+                }
+                input {
+                    font-size: 15px;
+                    color: $heading-color-1;
+                    height: 50px;
+                    padding: 5px 10px;
+                    width: 100%;
+                    background: $section-bg-color-2;
+                    border: 1px solid $border-color-1;
+                    margin: 0 0 20px;
+                    border-radius: 0;
+                    @include breakpoint(medium){
+                        font-size: 16px;
+                        margin: 0 0 40px;
+                        padding: 5px 15px;
+                    }
+                } 
+                button {
+                    color: $body-text-color;
+                    font-size: 15px;
+                    padding: 10px 25px;
+                    border-radius: 0;
+                    background: $section-bg-color-2;
+                    border: 1px solid $border-color-1;
+                    transition: $transition;
+                    @include breakpoint(medium){
+                        font-size: 16px;
+                        padding: 14px 35px;
+                    }
+                }
+                button:hover {
+                    color: $text-color-1;
+                    background: $main-hover;
+                    border: 1px solid $main-hover;
+                }
+            }
+        }
+    }
+}

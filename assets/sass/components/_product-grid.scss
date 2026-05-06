@@ -1,0 +1,138 @@
+/*==========================
+=> product grid css
+============================*/
+
+.product-grid-item {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+    .product-image {
+        position: relative;
+        overflow: hidden;
+        .product-badges {
+            span {
+                position: absolute;
+                top: 10px;
+                background: $badges-color;
+                color: $text-color-1;
+                padding: 1px 6px;
+                display: inline-block;
+                text-align: center;
+                font-size: 12px;
+                font-weight: 700;
+                border-radius: 0 3px 3px 0;
+                left: 0;
+                @include breakpoint(medium){
+                    font-size: 13px;
+                    padding: 1px 14px;
+                }
+            }
+            span.new {
+                left: auto;
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+        }
+        .product-action {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            opacity: 1;
+            visibility: visible;
+            transition: $transition-2;
+            @include breakpoint(large){
+                opacity: 0;
+                visibility: hidden;
+                bottom: -30%;
+            }
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                @include breakpoint(medium){
+                    flex-wrap: unset;
+                }
+                li {
+                    display: inline-block;
+                    flex: 1 0 auto;
+                    border-right: 1px solid $action-bg-color;
+                    background: $action-bg-color;
+                    transition: $transition;
+                    a {
+                        color: $heading-color-1;
+                        font-size: 16px;
+                        display: block;
+                        padding: 5px 0;
+                        transition: $transition;
+                        @include breakpoint(medium){
+                            font-size: 20px;
+                            padding: 10px 0;
+                        }
+                    }
+                }
+                li:hover {
+                    border-right: 1px solid $main-hover;
+                    background: $main-hover;
+                    a {
+                        color: $text-color-1;
+                    }
+                }
+                li:last-child {
+                    border: none;
+                }
+            }
+        }
+    }
+    .product-info {
+        padding-top: 20px;
+        h3 {
+            margin-bottom: 10px;
+            a {
+                font-size: 17px;
+                color: #000;
+                transition: $transition;
+                @include breakpoint(medium){
+                    font-size: 19px;
+                }
+            }
+            a:hover {
+                color: $main-hover;
+            }
+        }
+        .product-rating {
+            margin-bottom: 5px;
+            i {
+                margin: 0 2px;
+                color: $rating-color;
+                font-size: 15px;
+            }
+        }
+        .product-price {
+            font-size: 16px;
+            @include breakpoint(medium){
+                font-size: 17px;
+            }
+            span {
+                font-weight: 600;
+                color: $main-hover;
+            }
+            del {
+                margin-left: 8px;
+                font-size: 14px;
+                @include breakpoint(medium){
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+.product-grid-item:hover {
+    .product-image {
+        .product-action {
+            opacity: 1;
+            visibility: visible;
+            bottom: 0;
+        }
+    }
+}

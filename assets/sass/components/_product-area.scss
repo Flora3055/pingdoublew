@@ -1,0 +1,14 @@
+/*==========================
+=> product area css
+============================*/ 
+.product-area {
+    overflow: hidden;
+    .product-slider {
+        .slick-dots {
+            bottom: -15px;
+            @include breakpoint(large){
+                bottom: 15px;
+            }
+        }
+    }  
+}
